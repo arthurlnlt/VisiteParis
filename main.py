@@ -16,6 +16,7 @@ tab_jeune = [
     ["Musée de l'illusion", "https://maps.app.goo.gl/iGCYdT3hRNzvMPcB7", 18, 1, 1, 1],
     ["Jeu de piste engagé à Odéon", "https://maps.app.goo.gl/xnqozN1RG2h7YFq38", 30, 3, 1, 6],
     ["Escape game Le Bureau des Légendes", "https://maps.app.goo.gl/4pQst7wPh1AqKUjg6", 60, 3, 1, 6],
+    ["Initiation au Street-Art", "https://maps.app.goo.gl/Wo6Bswm8L4GhKn4C7",50,4,1,3]
 
 ]
 
@@ -26,7 +27,11 @@ tab_moyen = [
     ["Visite du quartier Latin", "https://maps.app.goo.gl/JoE6rrbaD4iACHhG7", 0, 4, 1, 5],
     ["Ballade en 2CV dans Paris", "Adresse choisie au préalable", 110, 4, 1, 75],
     ["Jeu de piste au musée de la magie et des automates", "https://maps.app.goo.gl/jn5U1rRP7RQ5fkbc9", 27, 3, 1, 4],
-    ["Visite guidée des Berges de Seine en vélo", "https://maps.app.goo.gl/m23jTBuLFBUnLYFE7", 42, 4, 1, 3]
+    ["Visite guidée des Berges de Seine en vélo", "https://maps.app.goo.gl/m23jTBuLFBUnLYFE7", 42, 4, 1, 3],
+    ["Rue Dénoyez : Street-Art", "https://maps.app.goo.gl/Sb5xrCQQHAmnV9Fa6",0,4,1,20],
+    ["Parc de Montsouris","https://maps.app.goo.gl/DkNrN2tEZe3UhT8W7",0,4,1,14],
+    ["Notre Dame du Travail","https://maps.app.goo.gl/hpUYzDZ2HDcCLonB9",0,2,1,14],
+    ["Cedric Grolet Opéra","https://maps.app.goo.gl/cSHRQbtiFApZe1Gi8",30,1,1,2]
 
 ]
 
@@ -37,13 +42,22 @@ tab_vieux = [
     ["Dégustation de fromages", "https://maps.app.goo.gl/dj2VxW7Pk4fMvWv59", 70, 2, 1, 5],
     ["Atelier oenologie des cafés d'exception", "https://maps.app.goo.gl/o7wJSSqGB93WohMN8", 190, 2, 1, 6],
     ["Dégustation fromages & vins Cave du Louvre", "https://maps.app.goo.gl/4FFJj4JBk9Fk8vxW7", 109, 2, 1, 1],
-    ["Visite en DS dans Paris", "Adresse choisie au préalable", 110, 4, 1, 75]
+    ["Visite en DS dans Paris", "Adresse choisie au préalable", 110, 4, 1, 75],
+    ["La plus vieille maison de Paris","https://maps.app.goo.gl/Ei917pMc7WCa5LHU8",0,4,1,3],
+    ["Musée du Quai Branly","https://maps.app.goo.gl/ZckHYWeb3vgLRJZU7",12,2,1,7],
+    ["Place des Vosges","https://maps.app.goo.gl/mBkScgf2PS5vT86aA",0,4,1,4]
+
 
 ]
 
 boucle = 0
 while boucle != 1:
     print("Bienvenue sur le dénicheur de bon plans à Paris !\n")
+    print("actuellement",len(tab_jeune)+len(tab_moyen)+len(tab_vieux),"activités dans notre base de données\n")
+    print("Appuyez sur 1 pour commencer:\n")
+    a = int(input())
+    while a !=1:
+        a = int(input())
     print("Souhaitez-vous appliquer un filtre d'âge pour les activités ?\n"
           "1- Oui\n"
           "2- Non")
