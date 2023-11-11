@@ -12,6 +12,24 @@ def rechercherparprix(tab, prix):
                 sortie.append(tab[i])
     return sortie
 
+def trierparprix(tab, prix):
+    sortie = []
+    if prix == 1:
+        for i in range(len(tab)):
+            if tab[i][2]==0:
+                sortie.append(tab[i])
+    elif prix == 2:
+        for i in range(len(tab)):
+            if 0 < tab[i][2] < 50:
+                sortie.append(tab[i])
+    else:
+        for i in range(len(tab)):
+            if tab[i][2] > 50:
+                sortie.append(tab[i])
+    return sortie
+
+
+
 def rechercherparlieu(tab, lieu):
     sortie = []
     for i in range(len(tab)):
@@ -82,3 +100,13 @@ def afficherlieux(tab):
         else:
             print("Non")
         print("\n")
+
+
+def verificationtableau(tab):
+    print("Il reste", len(tab), "activités. Souhaitez-vous continuer à trier ?\n"
+                                    "1- Oui\n"
+                                    "2- Non")
+    stop = int(input())
+    while 1 > stop > 2:
+        stop = int(input())
+    return stop
