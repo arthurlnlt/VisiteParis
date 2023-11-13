@@ -19,7 +19,8 @@ tab_jeune = [
     ["Initiation au Street-Art", "https://maps.app.goo.gl/Wo6Bswm8L4GhKn4C7",50,4,1,3, 0],
     ["DAYA", "https://maps.app.goo.gl/CvAakDQ4WiQhaGwK7",30, 2, 1, "Ivry sur Seine", 1],
     ["Siena Paris", "https://maps.app.goo.gl/6E2SfUvAMggTAQth9",25,2,1,1,0],
-    ["EL&N London", "https://maps.app.goo.gl/KVydoMX1yUcT9UWTA",10, 2, 1, 9, 1]
+    ["EL&N London", "https://maps.app.goo.gl/KVydoMX1yUcT9UWTA",10, 2, 1, 9, 1],
+    ["Mad Golf", "https://maps.app.goo.gl/7TG4zqXqpGuDAuH36",16,4,1,2,0]
     
     
 
@@ -40,7 +41,8 @@ tab_moyen = [
     ["Ciel de Paris", "https://maps.app.goo.gl/ZtRcFHg6f9XuovJLA",35,2,1,1,0],
     ["Bambini Paris", "https://maps.app.goo.gl/RPqTmhSt4msrqLNZ8", 35,2,1,16,0],
     ["Kalamata Paris","https://maps.app.goo.gl/i5VJ4RsiRBFHFekL6",35,2,1,8,0],
-    ["Le Grand Amalfi","https://maps.app.goo.gl/xKvfbkmY549Nxc678",35, 2, 1, 5, 1]
+    ["Le Grand Amalfi","https://maps.app.goo.gl/xKvfbkmY549Nxc678",35, 2, 1, 5, 1],
+    ["Vitrines de Noël de la Samaritaine", "https://maps.app.goo.gl/KnTuk9ioPHpA6sKL9",0,4,1,1,0]
     
 
 ]
@@ -58,7 +60,8 @@ tab_vieux = [
     ["Place des Vosges","https://maps.app.goo.gl/mBkScgf2PS5vT86aA",0,4,1,4, 0],
     ["Giulia Paris","https://maps.app.goo.gl/jNxnsVpcSDJRRMXZA",60,2,1,8,0],
     ["Big Love Caffé","https://maps.app.goo.gl/DRusY56QyhenfcLi7",15,2,1,3,0],
-    ["Wagyu Paris", "https://maps.app.goo.gl/Bw1qq4c7WdN3YWzRA",25,2,1,19,1]
+    ["Wagyu Paris", "https://maps.app.goo.gl/Bw1qq4c7WdN3YWzRA",25,2,1,19,1],
+    ["Le Bebrant", "https://maps.app.goo.gl/7xkj3NuDDMDq7Uei7", 30,2,1,9,0]
     
 
 
