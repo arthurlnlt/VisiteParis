@@ -56,6 +56,7 @@ while boucle != 1:
     print("actuellement",len(tab_jeune)+len(tab_moyen)+len(tab_vieux),"activités dans notre base de données\n")
     print("Appuyez sur 1 pour commencer:\n")
     a = int(input())
+    os.system("cls")
     while a !=1:
         a = int(input())
     print("Souhaitez-vous appliquer un filtre d'âge pour les activités ?\n"
@@ -75,6 +76,7 @@ while boucle != 1:
             tableau = tab_vieux
     else:
         tableau = tab_jeune + tab_moyen + tab_vieux
+    os.system("cls")
     print("Choisissez:\n"
           "1- Vous souhaitez vous laisser surprendre avec une activité aléatoire choisi dans notre base de données "
           "selon vos critères\n"
@@ -84,6 +86,7 @@ while boucle != 1:
         choix = int(input())
 
     if choix == 1:
+        os.system("cls")
         print("Sélectionnez le paramètre que vous souhaitez filtrer:\n"
               "1- Prix\n"
               "2- Type d'activité\n"
@@ -94,12 +97,14 @@ while boucle != 1:
         while 1 > filtre > 5:
             filtre = int(input())
         if filtre == 1:
+            os.system("cls")
             print("Saisissez si vous souhaitez une activité gratuite ou payante:\n"
                   "1- Gratuit\n"
                   "2- Payant")
             prix = int(input())
             while 1 < prix > 2:
                 prix = int(input())
+            os.system("cls")
             print(
                 "Indiquez le nombre d'activités que vous souhaitez générer (à partir de 2, les lieux peuvent se répéter")
             nombre = int(input())
@@ -108,6 +113,7 @@ while boucle != 1:
             afficherlieux(tableau)
 
         if filtre == 2:
+            os.system("cls")
             print("Saisissez le type d'activité que vous souhaitez:\n"
                   "1- Musée\n"
                   "2- Restaurant\n"
@@ -116,6 +122,7 @@ while boucle != 1:
             lieu = int(input())
             while 1 < lieu > 4:
                 lieu = int(input())
+            os.system("cls")
             print("Indiquez le nombre d'activités que vous souhaitez générer (à partir de 2, les activités peuvent se "
                   "répéter")
             nombre = int(input())

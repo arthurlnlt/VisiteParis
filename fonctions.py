@@ -1,5 +1,5 @@
 import random
-
+import os
 def rechercherparprix(tab, prix):
     sortie = []
     if prix == 1:
@@ -80,6 +80,7 @@ def selectionnerRandom(tab, nombre):
 
 
 def afficherlieux(tab):
+    os.system("cls")
     for i in range(len(tab)):
         print("Nom : ", tab[i][0])
         print("Lien de localisation : ",tab[i][1])
