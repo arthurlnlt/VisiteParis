@@ -30,15 +30,23 @@ def trierparprix(tab, prix):
 
 
 
-def rechercherparlieu(tab, lieu):
+def rechercherparlieu(tab, lieu, halal):
     sortie = []
     for i in range(len(tab)):
         if lieu ==1:
             if tab[i][3] ==1:
                 sortie.append(tab[i])
-        if lieu ==2:
-            if tab[i][3] ==2:
-                sortie.append(tab[i])
+        if lieu == 2 :
+            if halal == 1:
+                if tab[i][3] == 2 and tab[i][6] == 1:
+                    sortie.append(tab[i])
+            elif halal == 2:
+                if tab[i][3] == 2 and tab[i][6] == 0:
+                    sortie.append(tab[i])
+            else:
+                if tab[i][3] == 2:
+                    sortie.append(tab[i])
+         
         if lieu ==3:
             if tab[i][3] ==3:
                 sortie.append(tab[i])
@@ -90,7 +98,10 @@ def afficherlieux(tab):
         if tab[i][3] == 1:
             print("Musée")
         elif tab[i][3] == 2:
-            print("Restaurant")
+            if tab[i][6] == 1:
+                print("Restaurant Halal")
+            else:
+                print("Restaurant")
         elif tab[i][3] == 3:
             print("Escape Game")
         else:

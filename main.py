@@ -1,51 +1,65 @@
 import os
+from tkinter import N
 
 from fonctions import *
 
 tableau = []
 
 tab_jeune = [
-    # modèle: nom, lien localisation, prix, type(1=musee 2=restaurant 3=escape game 4=lieu), accès transport : oui=1
-    # non=0, arrondissement
-    ["Musée du Louvre", "https://maps.app.goo.gl/KzE59zeDLkq7ynZj7", 0, 1, 1, 1],
-    ["La Felicita", "https://maps.app.goo.gl/y6WyLUWbWdcWTegK8", 20, 2, 1, 13],
-    ["Musée de la vie romantique", "https://maps.app.goo.gl/oy2V78AHan9aMrYb8", 0, 1, 1, 9],
-    ["PATROL", "https://maps.app.goo.gl/4HCCXaoNRKN98GkCA", 26, 2, 1, 6],
-    ["Jardin du Luxembourg", "https://maps.app.goo.gl/9x6BRUKptKbwfvAz8", 0, 4, 1, 6],
-    ["Petit Palais", "https://maps.app.goo.gl/ujsUpFMH2ByUrYNV6", 0, 1, 1, 8],
-    ["Musée de l'illusion", "https://maps.app.goo.gl/iGCYdT3hRNzvMPcB7", 18, 1, 1, 1],
-    ["Jeu de piste engagé à Odéon", "https://maps.app.goo.gl/xnqozN1RG2h7YFq38", 30, 3, 1, 6],
-    ["Escape game Le Bureau des Légendes", "https://maps.app.goo.gl/4pQst7wPh1AqKUjg6", 60, 3, 1, 6],
-    ["Initiation au Street-Art", "https://maps.app.goo.gl/Wo6Bswm8L4GhKn4C7",50,4,1,3]
+    # modèle: nom, lien localisation, prix, type(1=musee 2=restaurant 3=escape game 4=lieu), accès transport : oui=1, non=0, arrondissement, halal
+    ["Musée du Louvre", "https://maps.app.goo.gl/KzE59zeDLkq7ynZj7", 0, 1, 1, 1, 0],
+    ["La Felicita", "https://maps.app.goo.gl/y6WyLUWbWdcWTegK8", 20, 2, 1, 13, 0],
+    ["Musée de la vie romantique", "https://maps.app.goo.gl/oy2V78AHan9aMrYb8", 0, 1, 1, 9, 0],
+    ["PATROL", "https://maps.app.goo.gl/4HCCXaoNRKN98GkCA", 26, 2, 1, 6, 0],
+    ["Jardin du Luxembourg", "https://maps.app.goo.gl/9x6BRUKptKbwfvAz8", 0, 4, 1, 6, 0],
+    ["Petit Palais", "https://maps.app.goo.gl/ujsUpFMH2ByUrYNV6", 0, 1, 1, 8, 0],
+    ["Musée de l'illusion", "https://maps.app.goo.gl/iGCYdT3hRNzvMPcB7", 18, 1, 1, 1, 0],
+    ["Jeu de piste engagé à Odéon", "https://maps.app.goo.gl/xnqozN1RG2h7YFq38", 30, 3, 1, 6, 0],
+    ["Escape game Le Bureau des Légendes", "https://maps.app.goo.gl/4pQst7wPh1AqKUjg6", 60, 3, 1, 6, 0],
+    ["Initiation au Street-Art", "https://maps.app.goo.gl/Wo6Bswm8L4GhKn4C7",50,4,1,3, 0],
+    ["DAYA", "https://maps.app.goo.gl/CvAakDQ4WiQhaGwK7",30, 2, 1, "Ivry sur Seine", 1],
+    ["Siena Paris", "https://maps.app.goo.gl/6E2SfUvAMggTAQth9",25,2,1,1,0],
+    ["EL&N London", "https://maps.app.goo.gl/KVydoMX1yUcT9UWTA",10, 2, 1, 9, 1]
+    
+    
 
 ]
 
 tab_moyen = [
-    ["Musée d'Orsay", "https://maps.app.goo.gl/ku7TEfj2TDL2KwYo9", 16, 1, 1, 7],
-    ["Crypte archéologique de l'île de la Cité", "https://maps.app.goo.gl/G637hJoo6CEJtApt5", 9, 1, 1, 4],
-    ["Sainte Chapelle", "https://maps.app.goo.gl/8AGTEF2HUhcDR234A", 12, 1, 1, 1],
-    ["Visite du quartier Latin", "https://maps.app.goo.gl/JoE6rrbaD4iACHhG7", 0, 4, 1, 5],
-    ["Ballade en 2CV dans Paris", "Adresse choisie au préalable", 110, 4, 1, 75],
-    ["Jeu de piste au musée de la magie et des automates", "https://maps.app.goo.gl/jn5U1rRP7RQ5fkbc9", 27, 3, 1, 4],
-    ["Visite guidée des Berges de Seine en vélo", "https://maps.app.goo.gl/m23jTBuLFBUnLYFE7", 42, 4, 1, 3],
-    ["Rue Dénoyez : Street-Art", "https://maps.app.goo.gl/Sb5xrCQQHAmnV9Fa6",0,4,1,20],
-    ["Parc de Montsouris","https://maps.app.goo.gl/DkNrN2tEZe3UhT8W7",0,4,1,14],
-    ["Notre Dame du Travail","https://maps.app.goo.gl/hpUYzDZ2HDcCLonB9",0,2,1,14],
-    ["Cedric Grolet Opéra","https://maps.app.goo.gl/cSHRQbtiFApZe1Gi8",30,1,1,2]
+    ["Musée d'Orsay", "https://maps.app.goo.gl/ku7TEfj2TDL2KwYo9", 16, 1, 1, 7, 0],
+    ["Crypte archéologique de l'île de la Cité", "https://maps.app.goo.gl/G637hJoo6CEJtApt5", 9, 1, 1, 4, 0],
+    ["Sainte Chapelle", "https://maps.app.goo.gl/8AGTEF2HUhcDR234A", 12, 1, 1, 1, 0],
+    ["Visite du quartier Latin", "https://maps.app.goo.gl/JoE6rrbaD4iACHhG7", 0, 4, 1, 5, 0],
+    ["Ballade en 2CV dans Paris", "Adresse choisie au préalable", 110, 4, 1, 75, 0],
+    ["Jeu de piste au musée de la magie et des automates", "https://maps.app.goo.gl/jn5U1rRP7RQ5fkbc9", 27, 3, 1, 4, 0],
+    ["Visite guidée des Berges de Seine en vélo", "https://maps.app.goo.gl/m23jTBuLFBUnLYFE7", 42, 4, 1, 3, 0],
+    ["Rue Dénoyez : Street-Art", "https://maps.app.goo.gl/Sb5xrCQQHAmnV9Fa6",0,4,1,20, 0],
+    ["Parc de Montsouris","https://maps.app.goo.gl/DkNrN2tEZe3UhT8W7",0,4,1,14, 0],
+    ["Notre Dame du Travail","https://maps.app.goo.gl/hpUYzDZ2HDcCLonB9",0,1,1,14, 0],
+    ["Cedric Grolet Opéra","https://maps.app.goo.gl/cSHRQbtiFApZe1Gi8",30,1,1,2, 0],
+    ["Ciel de Paris", "https://maps.app.goo.gl/ZtRcFHg6f9XuovJLA",35,2,1,1,0],
+    ["Bambini Paris", "https://maps.app.goo.gl/RPqTmhSt4msrqLNZ8", 35,2,1,16,0],
+    ["Kalamata Paris","https://maps.app.goo.gl/i5VJ4RsiRBFHFekL6",35,2,1,8,0],
+    ["Le Grand Amalfi","https://maps.app.goo.gl/xKvfbkmY549Nxc678",35, 2, 1, 5, 1]
+    
 
 ]
 
 tab_vieux = [
-    ["Musée de Cluny - Musée national du Moyen Âge", "https://maps.app.goo.gl/ivuxSnJCiNtkurDW6", 12, 1, 1, 5],
+    ["Musée de Cluny - Musée national du Moyen Âge", "https://maps.app.goo.gl/ivuxSnJCiNtkurDW6", 12, 1, 1, 5, 0],
     ["Musée national de la Légion d’honneur et des ordres de chevalerie", "https://maps.app.goo.gl/CC42DjRdnMcAmSps9",
-     0, 1, 1, 7],
-    ["Dégustation de fromages", "https://maps.app.goo.gl/dj2VxW7Pk4fMvWv59", 70, 2, 1, 5],
-    ["Atelier oenologie des cafés d'exception", "https://maps.app.goo.gl/o7wJSSqGB93WohMN8", 190, 2, 1, 6],
-    ["Dégustation fromages & vins Cave du Louvre", "https://maps.app.goo.gl/4FFJj4JBk9Fk8vxW7", 109, 2, 1, 1],
-    ["Visite en DS dans Paris", "Adresse choisie au préalable", 110, 4, 1, 75],
-    ["La plus vieille maison de Paris","https://maps.app.goo.gl/Ei917pMc7WCa5LHU8",0,4,1,3],
-    ["Musée du Quai Branly","https://maps.app.goo.gl/ZckHYWeb3vgLRJZU7",12,2,1,7],
-    ["Place des Vosges","https://maps.app.goo.gl/mBkScgf2PS5vT86aA",0,4,1,4]
+     0, 1, 1, 7, 0],
+    ["Dégustation de fromages", "https://maps.app.goo.gl/dj2VxW7Pk4fMvWv59", 70, 2, 1, 5, 0],
+    ["Atelier oenologie des cafés d'exception", "https://maps.app.goo.gl/o7wJSSqGB93WohMN8", 190, 2, 1, 6, 0],
+    ["Dégustation fromages & vins Cave du Louvre", "https://maps.app.goo.gl/4FFJj4JBk9Fk8vxW7", 109, 2, 1, 1, 0],
+    ["Visite en DS dans Paris", "Adresse choisie au préalable", 110, 4, 1, 75, 0],
+    ["La plus vieille maison de Paris","https://maps.app.goo.gl/Ei917pMc7WCa5LHU8",0,4,1,3, 0],
+    ["Musée du Quai Branly","https://maps.app.goo.gl/ZckHYWeb3vgLRJZU7",12,1,1,7, 0],
+    ["Place des Vosges","https://maps.app.goo.gl/mBkScgf2PS5vT86aA",0,4,1,4, 0],
+    ["Giulia Paris","https://maps.app.goo.gl/jNxnsVpcSDJRRMXZA",60,2,1,8,0],
+    ["Big Love Caffé","https://maps.app.goo.gl/DRusY56QyhenfcLi7",15,2,1,3,0],
+    ["Wagyu Paris", "https://maps.app.goo.gl/Bw1qq4c7WdN3YWzRA",25,2,1,19,1]
+    
 
 
 ]
@@ -123,10 +137,17 @@ while boucle != 1:
             while 1 < lieu > 4:
                 lieu = int(input())
             os.system("cls")
+            halal = 0
+            if lieu == 2:
+               print("Souhaitez-vous un restaurant Halal ?\n 1- Oui\n 2- Non\n 3- Peu importe")
+               halal = int(input())
+               while 1 > halal > 3:
+                    halal = int(input())
+            os.system('cls')
             print("Indiquez le nombre d'activités que vous souhaitez générer (à partir de 2, les activités peuvent se "
                   "répéter")
             nombre = int(input())
-            tableau = rechercherparlieu(tableau, lieu)
+            tableau = rechercherparlieu(tableau, lieu, halal)
             tableau = selectionnerRandom(tableau, nombre)
 
 
@@ -192,7 +213,13 @@ while boucle != 1:
                 activite = int(input())
                 while 1>activite>4:
                     activite = int(input())
-                tableau = rechercherparlieu(tableau, activite)
+                halal = 0
+                if activite == 2:
+                    print("Souhaitez-vous un restaurant Halal ?\n 1- Oui\n 2- Non\n 3- Peu importe")
+                    halal = int(input())
+                    while 1 > halal > 3:
+                        halal = int(input())
+                tableau = rechercherparlieu(tableau, activite,halal)
                 stop = verificationtableau(tableau)
 
             if choix1 == 3:
