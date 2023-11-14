@@ -20,7 +20,10 @@ tab_jeune = [
     ["DAYA", "https://maps.app.goo.gl/CvAakDQ4WiQhaGwK7",30, 2, 1, "Ivry sur Seine", 1],
     ["Siena Paris", "https://maps.app.goo.gl/6E2SfUvAMggTAQth9",25,2,1,1,0],
     ["EL&N London", "https://maps.app.goo.gl/KVydoMX1yUcT9UWTA",10, 2, 1, 9, 1],
-    ["Mad Golf", "https://maps.app.goo.gl/7TG4zqXqpGuDAuH36",16,4,1,2,0]
+    ["Mad Golf", "https://maps.app.goo.gl/7TG4zqXqpGuDAuH36",16,4,1,2,0],
+    ["Ballon de Paris Generali","https://maps.app.goo.gl/8h8A5vg281mNswYMA",18,4,1,15,0],
+    ["Catacombes de Paris","https://maps.app.goo.gl/ZSvGf5KSEivDLLaK8",35,1,1,14,0],
+    ["Paradox Museum","https://maps.app.goo.gl/BHkUwahCENL1e1by6",22,1,1,9,0]
     
     
 
@@ -42,7 +45,10 @@ tab_moyen = [
     ["Bambini Paris", "https://maps.app.goo.gl/RPqTmhSt4msrqLNZ8", 35,2,1,16,0],
     ["Kalamata Paris","https://maps.app.goo.gl/i5VJ4RsiRBFHFekL6",35,2,1,8,0],
     ["Le Grand Amalfi","https://maps.app.goo.gl/xKvfbkmY549Nxc678",35, 2, 1, 5, 1],
-    ["Vitrines de Noël de la Samaritaine", "https://maps.app.goo.gl/KnTuk9ioPHpA6sKL9",0,4,1,1,0]
+    ["Vitrines de Noël de la Samaritaine", "https://maps.app.goo.gl/KnTuk9ioPHpA6sKL9",0,4,1,1,0],
+    ["Grandes Serres du jardin des Plantes","https://maps.app.goo.gl/QdVh52NxndW6Hyqq7",7,4,1,5,0],
+    ["Rex Studios","https://maps.app.goo.gl/fZU2cc1TsCWRdnUb6",11,4,1,2,0],
+    ["Virtual Room Paris","https://maps.app.goo.gl/PpamoBYsJwt4jjgx6",30,3,1,11,0]
     
 
 ]
@@ -61,7 +67,10 @@ tab_vieux = [
     ["Giulia Paris","https://maps.app.goo.gl/jNxnsVpcSDJRRMXZA",60,2,1,8,0],
     ["Big Love Caffé","https://maps.app.goo.gl/DRusY56QyhenfcLi7",15,2,1,3,0],
     ["Wagyu Paris", "https://maps.app.goo.gl/Bw1qq4c7WdN3YWzRA",25,2,1,19,1],
-    ["Le Bebrant", "https://maps.app.goo.gl/7xkj3NuDDMDq7Uei7", 30,2,1,9,0]
+    ["Le Bebrant", "https://maps.app.goo.gl/7xkj3NuDDMDq7Uei7", 30,2,1,9,0],
+    ["Cabaret Canaille","https://maps.app.goo.gl/bsq9LdGWvjTNX5jg9",35,4,1,8,0],
+    ["Observatoire de la Sorbonne","https://maps.app.goo.gl/p4eZsYJh9NNVPF3w9",10,4,1,5,0],
+    ["Le Moulin Rouge","https://maps.app.goo.gl/yZeDgFnHbaWhp4F29",170,2,1,18,0]
     
 
 
