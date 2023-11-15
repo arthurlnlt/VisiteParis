@@ -23,7 +23,10 @@ tab_jeune = [
     ["Mad Golf", "https://maps.app.goo.gl/7TG4zqXqpGuDAuH36",16,4,1,2,0],
     ["Ballon de Paris Generali","https://maps.app.goo.gl/8h8A5vg281mNswYMA",18,4,1,15,0],
     ["Catacombes de Paris","https://maps.app.goo.gl/ZSvGf5KSEivDLLaK8",35,1,1,14,0],
-    ["Paradox Museum","https://maps.app.goo.gl/BHkUwahCENL1e1by6",22,1,1,9,0]
+    ["Paradox Museum","https://maps.app.goo.gl/BHkUwahCENL1e1by6",22,1,1,9,0],
+    ["Musée Carnavalet","https://maps.app.goo.gl/71ES9TWcBXcdAaee9",0,1,1,3,0],
+    ["Musée d'Art Moderne de Paris","https://maps.app.goo.gl/LXdAYmWZGoK1wTqn8",0,1,1,16,0],
+    ["Institut du Monde Arabe","https://maps.app.goo.gl/BLjuwT4hL4CtgDZr5",8,1,1,5,0]
     
     
 
@@ -40,7 +43,7 @@ tab_moyen = [
     ["Rue Dénoyez : Street-Art", "https://maps.app.goo.gl/Sb5xrCQQHAmnV9Fa6",0,4,1,20, 0],
     ["Parc de Montsouris","https://maps.app.goo.gl/DkNrN2tEZe3UhT8W7",0,4,1,14, 0],
     ["Notre Dame du Travail","https://maps.app.goo.gl/hpUYzDZ2HDcCLonB9",0,1,1,14, 0],
-    ["Cedric Grolet Opéra","https://maps.app.goo.gl/cSHRQbtiFApZe1Gi8",30,1,1,2, 0],
+    ["Cedric Grolet Opéra","https://maps.app.goo.gl/cSHRQbtiFApZe1Gi8",30,2,1,2, 0],
     ["Ciel de Paris", "https://maps.app.goo.gl/ZtRcFHg6f9XuovJLA",35,2,1,1,0],
     ["Bambini Paris", "https://maps.app.goo.gl/RPqTmhSt4msrqLNZ8", 35,2,1,16,0],
     ["Kalamata Paris","https://maps.app.goo.gl/i5VJ4RsiRBFHFekL6",35,2,1,8,0],
@@ -48,7 +51,12 @@ tab_moyen = [
     ["Vitrines de Noël de la Samaritaine", "https://maps.app.goo.gl/KnTuk9ioPHpA6sKL9",0,4,1,1,0],
     ["Grandes Serres du jardin des Plantes","https://maps.app.goo.gl/QdVh52NxndW6Hyqq7",7,4,1,5,0],
     ["Rex Studios","https://maps.app.goo.gl/fZU2cc1TsCWRdnUb6",11,4,1,2,0],
-    ["Virtual Room Paris","https://maps.app.goo.gl/PpamoBYsJwt4jjgx6",30,3,1,11,0]
+    ["Virtual Room Paris","https://maps.app.goo.gl/PpamoBYsJwt4jjgx6",30,3,1,11,0],
+    ["Musée Picasso","https://maps.app.goo.gl/Jbyu8HoERFBS7K4Q6",14,1,1,3,0],
+    ["Musée de l'Orangerie","https://maps.app.goo.gl/A8Xfo7i2peZZw97PA",13,1,1,1,0],
+    ["Exposition Parfums d'Orient","https://maps.app.goo.gl/BLjuwT4hL4CtgDZr5",13,1,1,5,0],
+    ["Musée des Arts décoratifs","https://maps.app.goo.gl/foNgp96ah9Mrx7T2A",14,1,1,1,0],
+    ["Exposition le Japon en couleur","https://maps.app.goo.gl/foNgp96ah9Mrx7T2A",14,1,1,1,0]
     
 
 ]
@@ -70,7 +78,15 @@ tab_vieux = [
     ["Le Bebrant", "https://maps.app.goo.gl/7xkj3NuDDMDq7Uei7", 30,2,1,9,0],
     ["Cabaret Canaille","https://maps.app.goo.gl/bsq9LdGWvjTNX5jg9",35,4,1,8,0],
     ["Observatoire de la Sorbonne","https://maps.app.goo.gl/p4eZsYJh9NNVPF3w9",10,4,1,5,0],
-    ["Le Moulin Rouge","https://maps.app.goo.gl/yZeDgFnHbaWhp4F29",170,2,1,18,0]
+    ["Le Moulin Rouge","https://maps.app.goo.gl/yZeDgFnHbaWhp4F29",170,2,1,18,0],
+    ["Grande mosquée de Paris","https://maps.app.goo.gl/Mhge3Upu18nrStZ3A",3,1,1,5,0],
+    ["Musée Rodin","https://maps.app.goo.gl/twS9KczwNQvZz6Va9",14,1,1,7,0],
+    ["Exposition George Hugo","https://maps.app.goo.gl/kWbcGihiWNwNQf566",9,1,1,4,0],
+    ["Exposition Claude Gillot","https://maps.app.goo.gl/BvZxAjyvHoMSpmeT7",17,1,1,1,0],
+    ["Exposition Chagall à l'Oeuvre","https://maps.app.goo.gl/kKEbNXyQ6Q8idSDF8",15,1,1,4,0],
+    ["Exposition Nicolas de Staël","https://maps.app.goo.gl/LXdAYmWZGoK1wTqn8",15,1,1,16,0],
+    ["Exposition Amedeo Modigliani","https://maps.app.goo.gl/A8Xfo7i2peZZw97PA",13,1,1,1,0]
+    
     
 
 
